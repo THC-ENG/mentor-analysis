@@ -16,6 +16,23 @@
 
 两种用法共享同一套数据格式与判定标准，下文"快速开始"按独立工具方式说明，AI 用法见 [`SKILL.md`](./SKILL.md)。
 
+## 如何作为 Skill 安装（用法 ①）
+
+把项目给 AI 助手用时，先让 AI 拿到本仓库的全部文件（SKILL.md + scripts/ + references/），再让它加载 `SKILL.md`：
+
+```bash
+# 方式 A：git clone（推荐，保持更新）
+git clone https://github.com/THC-ENG/mentor-analysis.git
+
+# 方式 B：下载 zip 解压
+#   https://github.com/THC-ENG/mentor-analysis/archive/refs/tags/v1.0.0.zip
+```
+
+然后对你的 AI 助手说："**读取 mentor-analysis/SKILL.md，按其中的方法分析 XX 老师**" 即可。
+
+- **WorkBuddy 用户**：把 `mentor-analysis` 目录放进 `~/.workbuddy/skills/`（用户级技能目录）后重启会话，之后直接说"分析 XX 老师"即可自动触发。
+- **其他 AI 助手（Claude/ChatGPT 等）**：把 `SKILL.md` 内容粘贴进对话或作为 system prompt 的一部分，并确保它能访问本目录下的 `scripts/` 与 `references/` 文件。
+
 ## 为什么要用它
 
 在读研/保研/申博之前，用公开数据回答这些关键问题：

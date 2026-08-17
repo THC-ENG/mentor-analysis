@@ -10,6 +10,12 @@ agent_created: true
 
 分析某位导师/教授是否值得选择，通过公开可得的论文数据与毕业论文数据，从 5 个维度定量评估：科研实力（一二区占比）、一作让渡情况（导师一作占比）、一作集中度（关系户风险）、成果压制（三四区占比）、毕业保障（延毕率）。
 
+## 前置条件（重要）
+
+- 本 skill 依赖仓库内的文件：`scripts/compute_metrics.py`、`references/`、`assets/report-template.md`。**执行前必须确认这些文件在本地可用**（git clone 或解压 zip 得到整个仓库目录，而不是只读取 SKILL.md 文档）。
+- 若当前环境没有这些文件，先执行：`git clone https://github.com/THC-ENG/mentor-analysis.git`（或下载 v1.0.0 的 zip 解压），再在仓库目录内运行本 skill。
+- 仓库中已有 `examples/` 示例数据，可在正式分析前用 `examples/papers.json` + `examples/theses.json` 跑一遍脚本验证环境（预期输出见 `examples/metrics_example.json`）。
+
 ## 触发场景
 
 以下请求应触发本 skill：
