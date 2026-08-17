@@ -2,6 +2,22 @@
 
 > 分析某位导师之前，先看数据：**科研实力 · 一作让渡 · 一作集中度 · 成果压制 · 延毕率**，五维量化，不靠猜。
 
+![CI](https://github.com/THC-ENG/mentor-analysis/actions/workflows/ci.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
+
+## 这个项目有两种用法
+
+**① 作为 AI 助手的 Skill（推荐给使用 AI 助手的同学）**
+`SKILL.md` 是一份可直接加载给 AI 助手（如 WorkBuddy）执行的方法论：当你说"分析一下 XX 老师"，AI 会自动完成论文检索 → 分区标注 → 知网延毕率推断 → 五维报告的全流程。无需自己动手收集数据。
+
+**② 作为独立 Python 工具（不依赖 AI）**
+`scripts/` 下的脚本纯标准库、零依赖，任何人都可以手动收集数据（OpenAlex 自动抓取 + 手工补填分区 + 知网查询）后离线计算五维指标。
+
+两种用法共享同一套数据格式与判定标准，下文"快速开始"按独立工具方式说明，AI 用法见 [`SKILL.md`](./SKILL.md)。
+
+## 为什么要用它
+
 在读研/保研/申博之前，用公开数据回答这些关键问题：
 
 - 这个组**整体科研实力**怎么样？—— 一二区论文占比
@@ -135,6 +151,7 @@ mentor-analysis/
 │   └── report-template.md      # 分析报告模板
 ├── examples/                   # 示例数据 + 示例报告（匿名化）
 ├── tests/                      # 单元测试（20 项）
+├── .github/workflows/ci.yml    # GitHub Actions CI（多版本 Python 跑测试）
 └── LICENSE                     # MIT
 ```
 
