@@ -365,19 +365,37 @@ def load_json(path):
         return json.load(f)
 
 
+def _to_year(value):
+    """把 year 字段转成 int；None/非数字/非法值返回 None。"""
+    if value is None:
+        return None
+    try:
+        y = int(value)
+        return y if 1900 <= y <= 2100 else None
+    except (TypeError, ValueError):
+        return None
+
+
 def filter_recent_papers(papers, years=5):
     """按年份过滤：保留最近 N 年发表的论文（含当年）。
 
     以数据中最新年份为基准向前推 N 年。years<=0 时不过滤。
-    输入 papers 需含非空 year 字段。
+    自动丢弃 year 缺失/非法的论文；字符串年份（如 "2023"）会转成 int。
     """
     if not papers:
         return []
-    papers_sorted = sorted(papers, key=lambda p: p.get("year", 0))
-    recent_year = max((p.get("year", 0) for p in papers_sorted), default=0)
-    if years and years > 0 and recent_year:
+    valid = []
+    for p in papers:
+        y = _to_year(p.get("year"))
+        if y is not None:
+            valid.append((y, p))
+    if not valid:
+        return []
+    papers_sorted = [p for _, p in sorted(valid, key=lambda x: x[0])]
+    recent_year = max(y for y, _ in valid)
+    if years and years > 0:
         cutoff = recent_year - years + 1
-        return [p for p in papers_sorted if p.get("year", 0) >= cutoff]
+        return [p for p in papers_sorted if _to_year(p.get("year")) >= cutoff]
     return papers_sorted
 
 
@@ -402,7 +420,6 @@ def main():
     theses = load_json(args.theses_json).get("theses", [])
     mentor_names = build_mentor_names(args.mentor)
 
-    papers = [p for p in papers if p.get("year")]
     recent_papers = filter_recent_papers(papers, args.recent_years)
 
     zs = zone_stat(recent_papers)

@@ -42,7 +42,6 @@ from compute_metrics import (
     filter_recent_papers,
 )
 
-
 def mk_paper(title="t", year=2023, journal="J", zone="一区",
              authors=None, first=None, co_first=None, corresponding=None, wtype="article"):
     """构造一条论文记录。"""
@@ -227,6 +226,21 @@ class TestRecentFilter(unittest.TestCase):
 
     def test_empty(self):
         self.assertEqual(filter_recent_papers([], years=5), [])
+
+    def test_invalid_years(self):
+        """year 为 None / 字符串 / 非法值时不应崩溃（回归：原实现会 TypeError）。"""
+        papers = [
+            mk_paper(year=2024),
+            mk_paper(year="2023"),          # 字符串年份
+            mk_paper(year=None),            # None
+            mk_paper(year="invalid"),       # 非法字符串
+            {"title": "no-year", "journal": "J", "zone": "一区"},  # 缺字段
+        ]
+        recent = filter_recent_papers(papers, years=5)
+        # None/非法被丢弃；字符串 "2023" 保留原样；int 2024 保留
+        self.assertEqual(len(recent), 2)
+        self.assertIn(2024, [p.get("year") for p in recent])
+        self.assertIn("2023", [p.get("year") for p in recent])
 
 
 if __name__ == "__main__":
