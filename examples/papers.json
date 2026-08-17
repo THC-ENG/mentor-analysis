@@ -1,0 +1,114 @@
+{
+  "papers": [
+    {
+      "title": "Reinforcement Learning for Robotic Manipulation with Sim-to-Real Transfer",
+      "year": 2024,
+      "journal": "IEEE Transactions on Robotics",
+      "zone": "一区",
+      "authors": ["Li Ming", "Zhang Wei", "Wang Fang", "Chen Qiang"],
+      "first_author": "Li Ming",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "Whole-Body Control of Humanoid Robots: A Survey",
+      "year": 2024,
+      "journal": "IEEE Robotics and Automation Magazine",
+      "zone": "一区",
+      "authors": ["Zhang Wei", "Liu Yang", "Zhao Lei"],
+      "first_author": "Zhang Wei",
+      "corresponding": ["Zhang Wei"],
+      "type": "review"
+    },
+    {
+      "title": "Multi-Modal Perception for Dexterous Manipulation",
+      "year": 2023,
+      "journal": "Science Robotics",
+      "zone": "一区",
+      "authors": ["Wang Fang", "Zhang Wei", "Sun Hui"],
+      "first_author": "Wang Fang",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "Learning-Based Trajectory Optimization for Robot Arms",
+      "year": 2023,
+      "journal": "IEEE Robotics and Automation Letters",
+      "zone": "二区",
+      "authors": ["Li Ming", "Zhang Wei"],
+      "first_author": "Li Ming",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "Vision-Language Models for Embodied AI",
+      "year": 2023,
+      "journal": "Robotics and Computer-Integrated Manufacturing",
+      "zone": "二区",
+      "authors": ["Chen Qiang", "Zhang Wei", "Wang Fang"],
+      "first_author": "Chen Qiang",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "Grasp Planning with Tactile Feedback",
+      "year": 2022,
+      "journal": "Sensors",
+      "zone": "三区",
+      "authors": ["Liu Yang", "Zhang Wei"],
+      "first_author": "Liu Yang",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "Compliant Control of Soft Robot Actuators",
+      "year": 2022,
+      "journal": "IEEE Access",
+      "zone": "三区",
+      "authors": ["Zhao Lei", "Li Ming", "Zhang Wei"],
+      "first_author": "Zhao Lei",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "Path Planning under Uncertainty for Mobile Robots",
+      "year": 2021,
+      "journal": "Journal of Intelligent & Robotic Systems",
+      "zone": "三区",
+      "authors": ["Li Ming", "Sun Hui", "Zhang Wei"],
+      "first_author": "Li Ming",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "A Review of Magnetic Adhesion Robots for Wall Climbing",
+      "year": 2021,
+      "journal": "Applied Sciences",
+      "zone": "四区",
+      "authors": ["Zhang Wei", "Chen Qiang", "Liu Yang"],
+      "first_author": "Zhang Wei",
+      "corresponding": ["Zhang Wei"],
+      "type": "review"
+    },
+    {
+      "title": "Visual Servoing for Industrial Assembly",
+      "year": 2021,
+      "journal": "Machines",
+      "zone": "四区",
+      "authors": ["Sun Hui", "Zhang Wei"],
+      "first_author": "Sun Hui",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    },
+    {
+      "title": "Imitation Learning from Human Demonstrations",
+      "year": 2020,
+      "journal": "IEEE Transactions on Robotics",
+      "zone": "一区",
+      "authors": ["Wang Fang", "Li Ming", "Zhang Wei"],
+      "first_author": "Wang Fang",
+      "corresponding": ["Zhang Wei"],
+      "type": "article"
+    }
+  ]
+}

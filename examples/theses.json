@@ -1,0 +1,68 @@
+{
+  "theses": [
+    {
+      "student": "Li Ming",
+      "degree": "博士",
+      "enroll_year": 2018,
+      "grant_year": 2023,
+      "grant_month": 6,
+      "note": ""
+    },
+    {
+      "student": "Wang Fang",
+      "degree": "博士",
+      "enroll_year": 2018,
+      "grant_year": 2024,
+      "grant_month": 6,
+      "note": "延毕1年"
+    },
+    {
+      "student": "Chen Qiang",
+      "degree": "博士",
+      "enroll_year": 2019,
+      "grant_year": 2024,
+      "grant_month": 6,
+      "note": ""
+    },
+    {
+      "student": "Liu Yang",
+      "degree": "博士",
+      "enroll_year": 2017,
+      "grant_year": 2023,
+      "grant_month": 6,
+      "note": ""
+    },
+    {
+      "student": "Sun Hui",
+      "degree": "硕士",
+      "enroll_year": 2020,
+      "grant_year": 2023,
+      "grant_month": 6,
+      "note": ""
+    },
+    {
+      "student": "Zhao Lei",
+      "degree": "硕士",
+      "enroll_year": 2020,
+      "grant_year": 2023,
+      "grant_month": 6,
+      "note": ""
+    },
+    {
+      "student": "Wu Di",
+      "degree": "硕士",
+      "enroll_year": 2021,
+      "grant_year": 2024,
+      "grant_month": 6,
+      "note": ""
+    },
+    {
+      "student": "Zhou Jie",
+      "degree": "硕士",
+      "enroll_year": 2020,
+      "grant_year": 2024,
+      "grant_month": 12,
+      "note": "延毕1年"
+    }
+  ]
+}

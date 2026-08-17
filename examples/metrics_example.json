@@ -1,0 +1,175 @@
+{
+  "mentor": "Zhang Wei",
+  "paper_total": 11,
+  "review_count": 2,
+  "year_range": [
+    2020,
+    2024
+  ],
+  "dim1_zone12": {
+    "stat": {
+      "zoned_total": 11,
+      "zone1": 4,
+      "zone2": 2,
+      "zone3": 3,
+      "zone4": 2,
+      "zone12_count": 6,
+      "zone34_count": 5,
+      "zone12_ratio": 0.545,
+      "zone34_ratio": 0.455
+    },
+    "judge": "中等偏上"
+  },
+  "dim2_mentor_first": {
+    "stat": {
+      "total": 11,
+      "mentor_first_count": 2,
+      "mentor_first_ratio": 0.182,
+      "mentor_first_list": [
+        "A Review of Magnetic Adhesion Robots for Wall Climbing",
+        "Whole-Body Control of Humanoid Robots: A Survey"
+      ],
+      "student_second_list": [
+        "A Review of Magnetic Adhesion Robots for Wall Climbing",
+        "Whole-Body Control of Humanoid Robots: A Survey"
+      ]
+    },
+    "judge": "健康：一作充分让渡给学生"
+  },
+  "dim3_concentration": {
+    "stat": {
+      "student_first_total": 9,
+      "unique_first_authors": 6,
+      "top1_name": "Li Ming",
+      "top1_count": 3,
+      "top1_ratio": 0.333,
+      "top3_ratio": 0.667,
+      "hhi": 0.21,
+      "distribution": {
+        "Li Ming": 3,
+        "Wang Fang": 2,
+        "Sun Hui": 1,
+        "Liu Yang": 1,
+        "Zhao Lei": 1,
+        "Chen Qiang": 1
+      }
+    },
+    "judge": "轻度集中：需结合最高产者身份（博士/博后 vs 硕士）判断"
+  },
+  "dim4_zone34": {
+    "stat": {
+      "zoned_total": 11,
+      "zone1": 4,
+      "zone2": 2,
+      "zone3": 3,
+      "zone4": 2,
+      "zone12_count": 6,
+      "zone34_count": 5,
+      "zone12_ratio": 0.545,
+      "zone34_ratio": 0.455
+    },
+    "judge": "压成果/灌水风险高"
+  },
+  "dim5_delay": {
+    "stat": {
+      "total": 8,
+      "detail": [
+        {
+          "student": "Li Ming",
+          "degree": "博士",
+          "enroll_year": 2018,
+          "grant_year": 2023,
+          "grant_month": 6,
+          "duration": 5,
+          "delayed": false,
+          "note": ""
+        },
+        {
+          "student": "Wang Fang",
+          "degree": "博士",
+          "enroll_year": 2018,
+          "grant_year": 2024,
+          "grant_month": 6,
+          "duration": 6,
+          "delayed": true,
+          "note": "延毕1年"
+        },
+        {
+          "student": "Chen Qiang",
+          "degree": "博士",
+          "enroll_year": 2019,
+          "grant_year": 2024,
+          "grant_month": 6,
+          "duration": 5,
+          "delayed": false,
+          "note": ""
+        },
+        {
+          "student": "Liu Yang",
+          "degree": "博士",
+          "enroll_year": 2017,
+          "grant_year": 2023,
+          "grant_month": 6,
+          "duration": 6,
+          "delayed": true,
+          "note": ""
+        },
+        {
+          "student": "Sun Hui",
+          "degree": "硕士",
+          "enroll_year": 2020,
+          "grant_year": 2023,
+          "grant_month": 6,
+          "duration": 3,
+          "delayed": false,
+          "note": ""
+        },
+        {
+          "student": "Zhao Lei",
+          "degree": "硕士",
+          "enroll_year": 2020,
+          "grant_year": 2023,
+          "grant_month": 6,
+          "duration": 3,
+          "delayed": false,
+          "note": ""
+        },
+        {
+          "student": "Wu Di",
+          "degree": "硕士",
+          "enroll_year": 2021,
+          "grant_year": 2024,
+          "grant_month": 6,
+          "duration": 3,
+          "delayed": false,
+          "note": ""
+        },
+        {
+          "student": "Zhou Jie",
+          "degree": "硕士",
+          "enroll_year": 2020,
+          "grant_year": 2024,
+          "grant_month": 12,
+          "duration": 4,
+          "delayed": true,
+          "note": "延毕1年"
+        }
+      ],
+      "overall_delay_ratio": 0.375,
+      "average_duration": 4.38,
+      "ms": {
+        "count": 4,
+        "delay_count": 1,
+        "delay_ratio": 0.25,
+        "avg_duration": 3.25
+      },
+      "phd": {
+        "count": 4,
+        "delay_count": 2,
+        "delay_ratio": 0.5,
+        "avg_duration": 5.5
+      }
+    },
+    "judge": "存在一定延毕风险"
+  }
+}
