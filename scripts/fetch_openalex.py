@@ -12,7 +12,7 @@ OpenAlex（https://openalex.org）是免费、无需 API key 的开放学术图�
 
 用法：
     python fetch_openalex.py "Wei Zhang" \
-        --institution "Harbin Institute of Technology" \
+        --institution "Example University" \
         --years 5 \
         --output papers.json
 

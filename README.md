@@ -64,7 +64,7 @@ git clone https://github.com/THC-ENG/mentor-analysis.git
 ```bash
 # 1. 从 OpenAlex 自动抓取导师近五年论文 → papers.json
 python scripts/fetch_openalex.py "Wei Zhang" \
-    --institution "Harbin Institute of Technology" \
+    --institution "Example University" \
     --years 5 --output papers.json
 
 # 2. 手工补填 papers.json 中的 zone 字段（期刊分区，见 references/data-sources.md）
